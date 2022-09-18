@@ -12,8 +12,6 @@ computer_value = {
 }
 
 # Reset The Game
-
-
 def reset_game():
     b1["state"] = "active"
     b2["state"] = "active"
@@ -23,16 +21,12 @@ def reset_game():
     l4.config(text="")
 
 # Disable the Button
-
-
 def button_disable():
     b1["state"] = "disable"
     b2["state"] = "disable"
     b3["state"] = "disable"
 
 # If player selected rock
-
-
 def isrock():
     c_v = computer_value[str(random.randint(0, 2))]
     if c_v == "Rock":
@@ -47,8 +41,6 @@ def isrock():
     button_disable()
 
 # If player selected paper
-
-
 def ispaper():
     c_v = computer_value[str(random.randint(0, 2))]
     if c_v == "Paper":
@@ -63,8 +55,6 @@ def ispaper():
     button_disable()
 
 # If player selected scissor
-
-
 def isscissor():
     c_v = computer_value[str(random.randint(0, 2))]
     if c_v == "Rock":
@@ -77,7 +67,6 @@ def isscissor():
     l1.config(text="Scissor		 ")
     l3.config(text=c_v)
     button_disable()
-
 
 # Add Labels, Frames and Button
 Label(root,
